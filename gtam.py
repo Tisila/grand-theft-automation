@@ -17,7 +17,7 @@ class CaptureKeys:
         self._user = keyboard.Controller()
         self._timer = 2.0 #change here, time in seconds
         self._task = threading.Timer(self._timer, self.execute)
-        self._btn_hold = 0.6 #change here, time in seconds
+        self._btn_hold = 0.76 #change here, time in seconds
 
     def execute(self):
         """ My function to execute when a combination is pressed """
