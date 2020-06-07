@@ -17,7 +17,7 @@ def process_img(image):
     # convert to gray
     processed_img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     # Cut up the good parts
-    finger_parts_vertices = np.array([[465,275],[755,275],[755,835],[465,835],
+    finger_parts_vertices = np.array([[445,245],[755,245],[755,825],[445,825],
         ], np.int32)
     processed_img = roi(processed_img, [finger_parts_vertices])
     # Applying binary threshold
